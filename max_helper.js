@@ -23,7 +23,7 @@ hostname = default.prd.api.discomax.com, cf.prod.media.h264.io, cf.prd.media.h26
 ^https:\/\/default\.prd\.api\.discomax\.com\/playback-orchestrator\/any\/playback-orchestrator\/v\d+\/playbackInfo$ url script-response-body https://raw.githubusercontent.com/liunice/MaxHelper/master/max_helper.js
 
 # 强制1080p
-^https:\/\/cf\.prod\.media\.h264\.io\/r\/hls\.m3u8\? url script-response-body https://raw.githubusercontent.com/liunice/MaxHelper/master/max_helper.js
+^https:\/\/cf\.(prod|prd)\.media\.h264\.io\/r\/hls\.m3u8\? url script-response-body https://raw.githubusercontent.com/liunice/MaxHelper/master/max_helper.js
 */
 
 (async () => {
